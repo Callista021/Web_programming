@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Croissants - Callista's Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Callista's Bakery</h1>
+        <a href="index.html" class="back-btn">← Back to Main Page</a>
+    </header>
+
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress&cs=tinysrgb&w=600" alt="French Croissants">
+            </div>
+
+            <div class="product-info">
+                <h2>French Croissants</h2>
+                <div class="price">Rs.80 each</div>
+                
+                <div class="description">
+                    Authentic French croissants made with real butter and traditional techniques. 
+                    Flaky, buttery, and perfect with your morning coffee.
+                </div>
+
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Made with real French butter</li>
+                        <li>Traditional lamination technique</li>
+                        <li>Flaky and buttery texture</li>
+                        <li>Baked fresh every morning</li>
+                        <li>Perfect for breakfast</li>
+                    </ul>
+                </div>
+
+                <div class="order-section">
+                    <div class="quantity">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" id="qty" value="1" min="1" max="12">
+                    </div>
+                    
+                    <button class="order-btn" onclick="addToCartDetail()">Add to Cart</button>
+                    <button class="order-btn" onclick="orderNow()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
