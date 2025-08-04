@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake - Callista's Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Callista's Bakery</h1>
+        <a href="index.html" class="back-btn">← Back to Main Page</a>
+    </header>
+
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolate Cake">
+            </div>
+
+            <div class="product-info">
+                <h2>Chocolate Cake</h2>
+                <div class="price"> Rs.300</div>
+                
+                <div class="description">
+                    Rich and moist chocolate cake with layers of chocolate frosting. 
+                    Made with premium cocoa and the finest ingredients for the ultimate chocolate experience.
+                </div>
+
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Three layers of moist chocolate cake</li>
+                        <li>Rich chocolate buttercream frosting</li>
+                        <li>Made with premium Belgian cocoa</li>
+                        <li>Perfect for celebrations</li>
+                        <li>Serves 8-10 people</li>
+                    </ul>
+                </div>
+
+                <div class="order-section">
+                    <div class="size-options">
+                        <label>Choose Size:</label>
+                        <input type="radio" name="size" value="small" id="small"> 
+                        <label for="small">6 inch - Rs.600</label><br>
+                        <input type="radio" name="size" value="medium" id="medium" checked> 
+                        <label for="medium">8 inch - Rs.1200</label><br>
+                        <input type="radio" name="size" value="large" id="large"> 
+                        <label for="large">10 inch - Rs. 1800</label>
+                    </div>
+
+                    <div class="quantity">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" id="qty" value="1" min="1" max="5">
+                    </div>
+                    
+                    <button class="order-btn" onclick="addToCartDetail()">Add to Cart</button>
+                    <button class="order-btn" onclick="orderNow()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
