@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueberry Pie - Callista's Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Callista's Bakery</h1>
+        <a href="index.html" class="back-btn">← Back to Main Page</a>
+    </header>
+
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="https://images.pexels.com/photos/7525184/pexels-photo-7525184.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blueberry Pie">
+            </div>
+
+            <div class="product-info">
+                <h2>Blueberry Pie</h2>
+                <div class="price">Rs.300</div>
+                
+                <div class="description">
+                    Classic American blueberry pie with a flaky, golden crust and sweet-tart blueberry filling. 
+                    Made with fresh blueberries and our secret family recipe.
+                </div>
+
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Fresh blueberry filling</li>
+                        <li>Flaky, buttery crust</li>
+                        <li>Traditional family recipe</li>
+                        <li>Serves 8-10 people</li>
+                        <li>Perfect for any occasion</li>
+                    </ul>
+                </div>
+
+                <div class="order-section">
+                    <div class="quantity">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" id="qty" value="1" min="1" max="3">
+                    </div>
+                    
+                    <button class="order-btn" onclick="addToCartDetail()">Add to Cart</button>
+                    <button class="order-btn" onclick="orderNow()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
